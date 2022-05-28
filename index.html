@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hallo</title>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+    <header>        
+        <nav id="sideNav">
+            <ul>
+                <li><a href="#home">Beranda</a></li>
+                <li><a href="#tentangsaya">Tentang Saya</a></li>
+                <li><a href="#pendidikan">Pendidikan</a></li>
+            </ul>
+        </nav>
+        <img src="assets/images/menu.png" id="menuBtn">
+    </header>
+    <main>
+        <article id="home">
+            <div class="container conten-row" style="margin-top:5% ;padding: 5%;">
+                    <div class="conten-left-col">
+                    <h1 style="font-size: 100px ;">Hallo!</h1>
+                    <h3>Selamat datang di Portopolioku</h3>
+
+                    <span class="line"></span><br>
+                    <p style="margin-bottom: 20px;">
+                        Disini akan menceritakan sedikit tentang diriku.
+                    </p>
+                    <a href="#tentangsaya" style="margin-top: 20px ;">
+                        <button id="homeBtn">Lihat Lebih Detail</button>
+                    </a>                    
+                </div>
+                <div class="conten-right-col">
+                        <aside>
+                        <div id="article" class="profile cardp">
+                            <div id="header">
+                                <figure style="margin-top: 5% ;">
+                                    <img src="assets/images/profile.jpg">
+                                </figure>
+                                <br><h3>Imam Akbar</h3><br>
+                            </div>
+                            <section>
+                                <div>
+                                    <h3>Skills</h3>
+                                    <h5>Web Development, Mobile Development, Leadership</h5>
+                                </div>
+                               
+                            </section>
+                        </div>
+                    </aside>
+                </div> 
+            </div>            
+        </article>
+    <article id="tentangsaya">
+        <div class="container conten-row" style="padding: 5% ;">
+            <div class="conten-left-col">
+                <img src="./assets/images/tentangsya.png">
+            </div>
+            <div class="conten-right-col" style="text-align: right;">
+                <div class="tentang-text">
+                    <h1>Tentang Saya</h1>
+                    <span class="line"></span><br>
+                    <p>
+                        Saya adalah seorang mahasiswa yang aktif di Akademik maupun Organisasi kampus. dan memiliki keingintahuan yang tinggi seputar dunia IT sekaligus memiliki minat untuk terjun langsung di dunia IT terutama Web Developer
+                    </p><br>
+                </div>
+            </div>
+        </div>
+    </article>
+
+<div id="pendidikan">
+    <article id="conten2" style="padding: 5% ;">
+        <div class="conten2-text">
+            <h1>Pendidikan Saya</h1>
+            <p>
+                Pendidikan yang telah saya tempuh.
+            </p>
+        </div>
+        <div class="conten2-row">
+            <div class="conten2-col card" style="padding: 5%;" >                    
+                <img src="assets/images/sma.png" >
+                <h4>SMA Negeri 3 Kotabumi</h4>
+                <p>
+                    Mengikuti Kegitan OSIS dan Ekstrakurikuler
+                </p>
+            </div>
+            <div class="conten2-col card" style="padding: 5%;">
+                <img src="assets/images/unila.png">
+                <h4>Universitas Lampung</h4>
+                <p>
+                    Mengikuti Kegitan Hima, BEM dan UKM
+                </p>
+            </div>
+        </div>
+    </article>
+</div>
+<footer>  
+    <section id="footer">
+        <div class="container" >
+            <p style="text-align: center;">Copyright Author</p>
+            </div>
+    </section>
+</footer>
+
+
+    <script>
+        var menuBtn = document.getElementById("menuBtn");
+        var sideNav = document.getElementById("sideNav");
+
+        sideNav.style.right = "-250px";
+        menuBtn.onclick = function () {
+            if (sideNav.style.right == "-250px") {
+                sideNav.style.right = "0";
+            }
+            else {
+                sideNav.style.right = "-250px";
+            }
+        }
+    </script>
+
+</body>
+
+</html>
